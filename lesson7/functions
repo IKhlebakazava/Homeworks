@@ -1,0 +1,79 @@
+// 1. поменять массив в обратном порядке 
+
+function reverseOrder(arr) {
+    arr.reverse();
+    return arr;
+}
+
+console.log(reverseOrder([1, 'Hello', 'IT', 'Academy', 5, 6])); 
+
+
+// 2. найти максимальное значение числа в массиве
+
+const findMax = arr => Math.max(...arr);
+
+console.log('Maximum value in array is: ' + findMax([4, 94, 55, 18, 0.-2, 111])); 
+
+
+// 3. записать в массив ряд фибоначчи начиная с N члена с длинной массива M
+
+const fibonacciNumbers = (N, M) =>{
+    const fibonacci = [0, 1];
+    for (let i = 2; i < N + M; i++) {
+      fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+    }
+    return fibonacci.slice(N, N + M);
+  }
+  
+console.log(fibonacciNumbers(4, 3))
+
+
+// 4. даны 2 4-х значных числа с неповторяющимися цифрами, надо определить сколько цифр 
+// в этих числах совпадают по значению и позиции и сколько только по значению (3487 и 3794 ---> 1 и 2 )
+
+function compareNumbers(number1, number2) {
+    const str1 = number1.toString();
+    const str2 = number2.toString();
+    let positionMatch = 0;
+    let valueMatch = 0;
+  
+    for (let i = 0; i < str1.length; i++) {
+      if (str1[i] === str2[i]) {
+        positionMatch++;
+      } else if (str2.includes(str1[i])) {
+        valueMatch++;
+      }
+    }
+  
+    return [positionMatch, valueMatch];
+  }
+let number1=3487
+let number2=3794
+const result = compareNumbers(number1, number2);
+
+console.log('Matches by position: ' + result[0]);
+console.log('Matches by value: ' + result[1]);
+
+
+// 5. сортировка массива по возрастанию/убыванию
+
+function sortingAscending(arr) {
+    arr.sort((a, b) => a - b);
+  return arr;
+  }
+  
+  function sortingDescending(arr) {
+    arr.sort((a, b) => b - a);
+  return arr;
+  }
+
+  console.log("sort ascending: " + sortingAscending([7,3278,76,232,0]));
+  console.log("sort descending: " + sortingDescending([7,3278,76,232,0]));
+
+// 6. удалить из массива все повторяющиеся элементы
+
+const removeDuplicates = (arr) => {
+    return arr.filter((item, index) => arr.indexOf(item) === index);
+  }
+  
+  console.log(removeDuplicates([2,2,3,4,5,2,3,4,5,1,]));
