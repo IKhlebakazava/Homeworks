@@ -1,4 +1,4 @@
-const { Vegetable, LeafyVegetable, RootVegetable, FruitVegetable, VegetableFactory } = require('./vegetables');
+const VegetableFactory = require('./vegetableFactory')
 
 class Salad {
     constructor() {
@@ -30,13 +30,13 @@ class Salad {
 }
 
 const factory = new VegetableFactory();
-const spinach = factory.createVegetable('Leafy', 'Spinach', 25, true, 100);
-const cabbage = factory.createVegetable('Leafy', 'Cabbage', 50, false, 80);
-const onion = factory.createVegetable('Root', 'Onion', 150, true, 250);
-const carrot = factory.createVegetable('Root', 'Carrot', 300, false, 110);
-const tomato = factory.createVegetable('Fruit', 'Tomato', 150, false, 500);
-const cucumber = factory.createVegetable('Fruit', 'Cucumber', 200, false, 200);
-const avocado = factory.createVegetable('Fruit', 'Avocado', 100, true, 1000);
+const spinach = factory.createVegetable('Leafy', 'Spinach', 25, true, 100, 'green', null, null);
+const cabbage = factory.createVegetable('Leafy', 'Cabbage', 50, false, 80, 'green', null, null);
+const onion = factory.createVegetable('Root', 'Onion', 150, true, 250, null, true, null);
+const carrot = factory.createVegetable('Root', 'Carrot', 300, false, 110, null, false, null);
+const tomato = factory.createVegetable('Fruit', 'Tomato', 150, false, 500, null, null, false);
+const cucumber = factory.createVegetable('Fruit', 'Cucumber', 200, false, 200, null, null, false);
+const avocado = factory.createVegetable('Fruit', 'Avocado', 100, true, 1000, null, null, true);
 
 const salad = new Salad();
 salad.addVegetable(spinach);
