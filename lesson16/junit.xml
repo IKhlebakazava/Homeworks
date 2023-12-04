@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="9" failures="0" errors="0" time="1.786">
+  <testsuite name="API Tests for for PUT book" errors="0" failures="0" skipped="0" timestamp="2023-11-21T03:09:27" time="1.016" tests="2">
+    <testcase classname="API Tests for for PUT book should return status code 200" name="API Tests for for PUT book should return status code 200" time="0.009">
+    </testcase>
+    <testcase classname="API Tests for for PUT book should be valid response body" name="API Tests for for PUT book should be valid response body" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="API Tests for GET Books by ID" errors="0" failures="0" skipped="0" timestamp="2023-11-21T03:09:27" time="1.043" tests="2">
+    <testcase classname="API Tests for GET Books by ID should return status code 200" name="API Tests for GET Books by ID should return status code 200" time="0.006">
+    </testcase>
+    <testcase classname="API Tests for GET Books by ID should be valid response body" name="API Tests for GET Books by ID should be valid response body" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="API Tests for GET Books" errors="0" failures="0" skipped="0" timestamp="2023-11-21T03:09:27" time="1.3" tests="2">
+    <testcase classname="API Tests for GET Books should return status code 200" name="API Tests for GET Books should return status code 200" time="0.008">
+    </testcase>
+    <testcase classname="API Tests for GET Books should be valid response body" name="API Tests for GET Books should be valid response body" time="0.018">
+    </testcase>
+  </testsuite>
+  <testsuite name="API Tests for for POST" errors="0" failures="0" skipped="0" timestamp="2023-11-21T03:09:27" time="1.336" tests="2">
+    <testcase classname="API Tests for for POST should return status code 200" name="API Tests for for POST should return status code 200" time="0.005">
+    </testcase>
+    <testcase classname="API Tests for for POST should be valid response body" name="API Tests for for POST should be valid response body" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="API Tests for for DELETE book" errors="0" failures="0" skipped="0" timestamp="2023-11-21T03:09:28" time="0.646" tests="1">
+    <testcase classname="API Tests for for DELETE book should return status code 200" name="API Tests for for DELETE book should return status code 200" time="0.004">
+    </testcase>
+  </testsuite>
+</testsuites>
