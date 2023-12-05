@@ -12,9 +12,12 @@ after (async () => {
     await driver.quit();
 })
 
-it ('Title names should be named correctly', async () =>{
+it ('Title name on the home page should be named "ChromeDriver"', async () =>{
     const mainTitleChromeDriver = await driver.findElement(By.css('span.Rn3Z1b.C9DxTc'));
     expect (await mainTitleChromeDriver.getText()).to.equal('ChromeDriver') 
+})
+
+it ('Title name on the extensions page should be named "Chrome Extensions"', async () =>{
     const chromeExtensionsLink = await driver.findElement(By.xpath('//a[@class="aJHbb dk90Ob jgXgSe HlqNPb" and text()="Chrome Extensions"]'));
     await chromeExtensionsLink.click()
     const mainTitleChromeExtensions = await driver.findElement(By.css('span.Rn3Z1b'));
