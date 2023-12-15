@@ -10,7 +10,6 @@ class LanguageChangePage extends BasePage {
 
   async changeLanguage() {
     await this.click(this.languageSelector);
-//    await this.waitForEnabled(this.languageChangeDropDown);
     await this.click(this.languageChangeDropDown);
   }
 
@@ -19,5 +18,4 @@ class LanguageChangePage extends BasePage {
   }
 }
 
-export default new LanguageChangePage()
-//export const languageChangePage = new LanguageChangePage();
+export default new LanguageChangePage();

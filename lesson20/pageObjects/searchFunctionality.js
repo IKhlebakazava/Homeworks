@@ -10,7 +10,6 @@ class SearchFunctionalityPage extends BasePage {
 
   async searchFor(query) {
     await this.click(this.searchButton);
-//    await this.waitForEnabled(this.searchInput);
     await this.setValue(this.searchInput, query);
   }
 
@@ -19,5 +18,4 @@ class SearchFunctionalityPage extends BasePage {
   }
 }
 
-export default new SearchFunctionalityPage()
-//export const searchFunctionalityPage = new SearchFunctionalityPage();
+export default new SearchFunctionalityPage();

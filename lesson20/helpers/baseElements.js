@@ -1,7 +1,7 @@
 class BaseElements {
     async click(element) {
       await element.waitForClickable();
-      await element.click()
+      await element.click();
     }
   
     async setValue(element, text) {
